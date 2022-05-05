@@ -31,25 +31,26 @@ const data = [{
 },
 ]
 
-const number = [1,2,3,4,5]
-console.log(number[3])
+// const number = [1,2,3,4,5]
+// console.log(number[3])
+
+
 //write a function to filter a male records.
 
+// function toGetMaleInformation(informations){
+//    let maleList = []
+//     for(let index = 0;index<informations.length;index++){
+//         console.log(informations[index])
+//         if(informations[index].gender === 'male'){
 
-function toGetMaleInformation(informations){
-   let maleList = []
-    for(let index = 0;index<informations.length;index++){
-        console.log(informations[index])
-        if(informations[index].gender === 'male'){
+//             maleList.push(informations[index])
+//         }
+//     }
+//    return maleList;
+// }
 
-            maleList.push(informations[index])
-        }
-    }
-   return maleList;
-}
-
-let maleInformation = toGetMaleInformation(data)
-console.log(maleInformation)
+// let maleInformation = toGetMaleInformation(data)
+// console.log(maleInformation)
 
 
 
@@ -69,53 +70,84 @@ console.log(maleInformation)
 //  console.log(femaleInformation)
 
 
-// write a function to filter an age which less than 18.
+/*write a function to filter an age which less than 18.
 
-// function toGetAgeInformation(informations){
-//     let ageList = []
-//      for(let index = 0;index<informations.length;index++){
-//          if(informations[index].age < '18'){
-//             ageList.push(informations[index])
-//          }
-//      }
-//     return ageList;
-//  }
+function toGetAgeInformation(informations){
+    let ageList = []
+     for(let index = 0;index<informations.length;index++){
+         if(informations[index].age < '18'){
+            ageList.push(informations[index])
+         }
+     }
+    return ageList;
+ }
  
-//  let ageInformation = toGetAgeInformation(data)
-//  console.log(ageInformation)
+ let ageInformation = toGetAgeInformation(data)
+ console.log(ageInformation)*/
 
 
-//  write a function to filter an age which greater than 18.
+ /*write a function to filter an age which greater than 18.
 
-// function toGetAgeInformation(informations){
-//     let ageList = []
-//      for(let index = 0;index<informations.length;index++){
-//          if(informations[index].age > '18'){
-//             ageList.push(informations[index])
-//          }
-//      }
-//     return ageList;
-//  }
+function toGetAgeInformation(informations){
+    let ageList = []
+     for(let index = 0;index<informations.length;index++){
+         if(informations[index].age > '18'){
+            ageList.push(informations[index])
+         }
+     }
+    return ageList;
+ }
  
-//  let ageInformation = toGetAgeInformation(data)
-//  console.log(ageInformation)
+ let ageInformation = toGetAgeInformation(data)
+ console.log(ageInformation)*/
 
 
 
-//  write a function to filter an age in between 18-25.
+/* write a function to filter an age in between 18-25.
 
 
-// function toGetAgeInformation(informations){
-//     let ageList = []
-//      for(let index = 0;index<informations.length;index++){
-//          const isAge = informations[index].age
+function toGetAgeInformation(informations){
+    let ageList = []
+     for(let index = 0;index<informations.length;index++){
+         const isAge = informations[index].age
          
-//          if((isAge > '18') && (isAge < '25')){
-//             ageList.push(informations[index])
-//          }
-//      }
-//     return ageList;
-//  }
+         if((isAge > '18') && (isAge < '25')){
+            ageList.push(informations[index])
+         }
+     }
+    return ageList;
+ }
  
-//  let ageInformation = toGetAgeInformation(data)
-//  console.log(ageInformation)
+ let ageInformation = toGetAgeInformation(data)
+ console.log(ageInformation)*/
+
+
+
+
+/*write a function to get arrray of employe names
+
+function toGetAnEmployeeNames(employees) {
+    let employeeNameList = []
+    for(let index = 0;index<employees.length;index++){
+        
+        employeeNameList.push(employees[index].name)
+    }
+    return employeeNameList;
+}
+ let employeeNames = toGetAnEmployeeNames(data)
+ console.log(employeeNames) */
+
+
+
+// write a function to get arrray of gender (edited) 
+
+ function toGetAnGender(employees) {
+    let genderList = []
+    for(let index = 0;index<employees.length;index++){
+        
+        genderList.push(employees[index].gender)
+    }
+    return genderList;
+}
+ let employeeNames = toGetAnGender(data)
+ console.log(employeeNames)
